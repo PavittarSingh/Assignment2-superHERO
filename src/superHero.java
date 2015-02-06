@@ -14,6 +14,7 @@
     public class superHero extends Hero {
 	// Define Constructor
 	private String[] Powers = new String [3];
+	
 	public superHero(String name)
 	
 	{
@@ -40,10 +41,13 @@
 		
 	//loop used for random powers from array list
 		int loop;
-		
+		//For LOOP
 		for(int i = 0; i <=2; i++){
+			//Randomed Power LIST
 			 loop = (int)(Math.random() * powerList.size());
+			 //Setting of POWER
 			 this.Powers[i] = powerList.get(loop);
+			 //Removed the power from array list
 			 powerList.remove(loop);
 		}
 		
