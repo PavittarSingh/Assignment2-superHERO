@@ -8,9 +8,9 @@
 
     import java.util.ArrayList; 
     import java.util.Arrays;
-/**
- * Declear the superhero class
- */
+
+    // Declear the superhero class
+
     public class superHero extends Hero {
 	// Define Constructor
 	private String[] Powers = new String [3];
@@ -23,14 +23,15 @@
     }	
 	
 
- // This Method created to adds the powers to ArrayList Powers then add to superpower arrays 
+    // This Method created to adds the powers to ArrayList Powers then add to superpower arrays 
 
 	
     private void generateRandomPowers(){
 		
 		//create instanced variables
-		ArrayList<String> powerList = new ArrayList<String>();				
-			powerList.addAll(Arrays.asList("Super Speed",
+		    ArrayList<String> powerList = new ArrayList<String>();				
+			powerList.addAll(Arrays.asList
+					         ("Super Speed",
 							  "Super Strength", 
 							  "Body Armor",
 							  "Flight",
@@ -50,7 +51,7 @@
 	// Show Method used to show the loop's value. 
 	public void showPower(){
 		
-		System.out.println(this.name + " Mac has super powers: ");		 
+		System.out.println(this.name + " has super powers: ");		 
 		for(int i = 0; i < Powers.length; i++)
 		{
 			System.out.println(Powers[i]);
